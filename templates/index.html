@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Hu_COVID</title>
+    </head>
+    <body>
+
+        <header>
+            <h2>Welcome To Hu_COVID</h2>
+        </header>
+        <div>
+            
+            <form action="{{url_for('predict')}}" method="POST">
+            <label>Are you addicted to Smoking? If yes, How much? Low Level = 0 , Medium Level = -1 , Hight Level = -2. And if No, then 0 </label>
+            <br>
+            <textarea name="a"></textarea>
+            <br>
+            <label>Are you addicted to Alochol? If yes, How much? Low Level = 0 , Medium Level = -1 , Hight Level = -2. And if No, then 0</label>
+            <br>
+            <textarea name="b"></textarea>
+            <br>
+            <label>Are you addicted to Gaming? If yes, How much? Low Level = 0 , Medium Level = -1 , Hight Level = -2. And if No, then 0</label>
+            <br>
+            <textarea name="c"></textarea>
+            <br>
+            <label>Are you addicted to Social Media? If yes, How much? Low Level = 0 , Medium Level = -1 , Hight Level = -2. And if No, then 0</label>
+            <br>
+            <textarea name="d"></textarea>
+            <br>
+            <label>Do you feel an undue pressure of not being productive?. If Yes then -1 , if No then 0 </label>
+            <br>
+            <textarea name="e"></textarea>
+            <br>
+            <label>
+                Please Select one of the followings :
+                Enjoying at home and spending more time with my family = 1 
+                Confused =0
+                Enjoyed for few days, now it is getting on my nerves. =-1
+                Not enjoying at all. Have started to get irritated very easily = -2
+           
+           
+           
+            </label>
+            <br>
+            <textarea name="f"></textarea>
+            <br>
+            <label>
+                Do you feel stressed?
+                If Yes then please enter -2
+                If no then please enter 0
+
+
+            </label>
+            <br>
+            <textarea name="g"></textarea>
+            <br>
+            <label>
+                Please Select one of the followings
+                It will take sometime for me. But I will adapt myself.Then Enter 0
+                I have adapted myself accordingly.(I am Taking Precautions and in a good mental state. Then please enter 2
+                I don''t want to adapt myself. I am very tensed at the moment and I want everything to return to normal as soon as possible. Then please enter -2
+
+
+            </label>
+            <br>
+            <textarea name="h"></textarea>
+            <br>
+            <label>
+                Do you feel Isolated?
+                If Yes then please enter -1
+                If No then please enter 0
+                If sometimes then please enter 0
+            </label>
+            <br>
+            <textarea name="i"></textarea>
+            <br>
+            <label>
+                Are you concerned about your studies?
+                Very concerned, then enter -2
+                Somewhat concerned then enter  0
+                Not concerned then enter 0
+            </label>
+            <br>
+            <textarea name="j"></textarea>
+            <br>
+           
+            <label>Do you fear COVID 19 ? If Yes then enter -1 and if No then enter 0</label>
+           <br>
+            <textarea name="k"></textarea>
+            <br>
+            <label>Are you employed? If Yes then enter 0 and if No then enter -1</label>
+            <br>
+            <textarea name="l"></textarea>  
+            <br>
+                <button type="submit">predict</button>
+
+            </form>
+            
+        </div>
+
+
+
+            <div>
+               
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
