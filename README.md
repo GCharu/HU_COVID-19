@@ -17,8 +17,14 @@ INSTALLATION GUIDE
 
 3. Install all the packages that are required
   pip install flask as f
+  
+  
   pip install pandas as pd
+  
+  
   pip insall tensorflow as tf
+  
+  
   pip install numpy as np
   
   
