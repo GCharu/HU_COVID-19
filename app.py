@@ -16,19 +16,32 @@ def predict():
 
     x = dataset.iloc[: , 1:-1].values
     y = dataset.iloc[: , -1].values
-    result =0
-    value_stat = []
-    for i in range(0 , 276):
-        if(y[i] > 0):
-            result = 1
-        elif y[i] < 0:
+    # result =0
+    # value_stat = []
+    # for i in range(0 , 276):
+    #     if(y[i] > 0):
+    #         result = 1
+    #     elif y[i] < 0:
+    #         result = 0
+    #     else:
+    #         result =0
+    #     value_stat.append(result)
+    result = 0
+    values = []
+
+    for i in range(0,276):
+        if(y[i] == 0):
+            result = 0.5
+        elif(y[i] < -2):
             result = 0
+        elif(y[i] > -2):
+            result = 1
         else:
-            result =0.5
-        value_stat.append(result)
+            result = 0
+        values.append(result)
         
 
-    final = np.array([value_stat])
+    final = np.array([values])
 
     status = final.T
 
